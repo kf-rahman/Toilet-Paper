@@ -1,0 +1,165 @@
+*{
+    font-family: 'Playfair Display', serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  
+}
+
+body{
+    min-height: 1000px;
+
+}
+
+#main{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(/images/1280x720-sky-blue-solid-color-background.jpg);
+    background-size: cover;
+    justify-content:center;
+}
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: -200px 80px;
+    z-index: 10000;
+    
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 100px ;
+    box-shadow: 0 5px 20px rgb(0,0,0,0.05);
+}
+
+nav{
+    
+    display: flex;
+    justify-content: space-around;
+    min-height: 8vh;
+    align-items: center;
+    
+    
+   
+}
+
+.nav-links{
+    
+   
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    list-style: none;
+    text-decoration: solid;
+}
+
+.logo{
+   
+    color: cornsilk;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+header.sticky .logo{
+    color: saddlebrown;
+}
+
+header.sticky .nav-links a:hover{
+    color: saddlebrown;
+}
+
+
+
+.main-pic img{
+    width: 500px;
+    height: 500px;
+    animation: drop 1.5s ease ;
+    align-items: center;
+    
+}
+
+@keyframes drop{
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+div.caption-container {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    width: 500px;
+}
+img {
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+}
+.content {
+    display: block;
+}
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+
+.row .col50 {
+    position: relative;
+    width: 48%;
+}
+
+.title_text{
+    color:skyblue;
+    font-size: 2em;
+    font-weight: 300;
+
+
+}
+
+
+
+.row2{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    
+}
+.title_text2{
+   
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.list li{
+    height: 50%;
+}
